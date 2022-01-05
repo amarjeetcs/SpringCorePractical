@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="
+    http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean name="emp1" class="com.springcore.collection.Emp">
+    <property name="name" value="Sanjeet Kumar"/>
+    <property name="phones" value="6261535069"/>
+    <!-- <list>
+    <value>6261535069</value>
+    <value>9523879435</value>
+    <value>6234356754</value>
+    <value>6261535064</value>
+    <value>6261535063</value>
+    </property>
+    </list> -->
+    
+    
+    <property name="address">
+    <set>
+    <value>Hyderabad</value>
+    <value>Pune</value>
+    <value>Ahemdabad</value>
+    <value>Delhi</value>
+    <value>Bihar</value>
+    </set>
+    </property>
+    
+    <property name="courses">
+    <map>
+    <entry key="Java" value="6 months"/>
+    <entry key="Python" value="3 months"/>
+    <entry key="C" value="3 months"/>
+    <entry key="C++" value="3 months"/>
+    <entry key=".Net" value="6 months"/>
+    </map>
+    </property>
+    
+    </bean>
+
+</beans>  
